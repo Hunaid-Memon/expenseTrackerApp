@@ -140,4 +140,6 @@ input {
     color: #434343;
 }
 
-
+/* .btn:focus{
+    transform: scale(0.95);
+} */
