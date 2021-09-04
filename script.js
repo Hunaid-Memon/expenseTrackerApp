@@ -7,10 +7,10 @@ const reason = document.getElementById('reason');
 const amount = document.getElementById('amount');
 
 const Transactions = [
-    { id: 1, reason: 'Salary', amount: 5000 },
-    { id: 2, reason: 'Utility', amount: -200 },
-    { id: 3, reason: 'Dinner', amount: -400 },
-    { id: 4, reason: 'Misc', amount: -1000 }
+    // { id: 1, reason: 'Salary', amount: 5000 },
+    // { id: 2, reason: 'Utility', amount: -200 },
+    // { id: 3, reason: 'Dinner', amount: -400 },
+    // { id: 4, reason: 'Misc', amount: -1000 }
 ]
 
 
@@ -66,6 +66,7 @@ function addTransaction(e) {
         updateBalance();
         reason.value = '';
         amount.value = '';
+        localStorage.setItem('transactions', JSON.stringify(transaction));
     }
 }
 
